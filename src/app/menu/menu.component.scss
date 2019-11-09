@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: cornsilk;
+
+  i {
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+
+  }
+
+  div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    background-color: cornsilk;
+    z-index: 1;
+    width: calc(100% - 16px);
+    left: 8px;
+
+    a {
+      &:hover {
+        background-color: bisque;
+        user-select: none;
+      }
+
+      position: relative;
+
+      font-family: sans-serif;
+      padding: 10px;
+
+    }
+  }
+}
