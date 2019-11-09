@@ -1,4 +1,6 @@
 <agm-map [latitude]="latitude" #map [longitude]="longitude" [zoom]="zoom" (mapClick)="mapClicked($event)">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" title="'You are here'">
+    </agm-marker>
   <agm-marker [latitude]="m.lat" [longitude]="m.lng" *ngFor="let m of markers; let i = index">
     <agm-info-window> {{m.text}} </agm-info-window>
   </agm-marker>
