@@ -1,0 +1,10 @@
+  form {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    font-family: sans-serif;
+
+    p-button {
+      grid-column: 2 span;
+    }
+  }

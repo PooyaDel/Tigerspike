@@ -25,6 +25,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@types/googlemaps": "^3.38.0",
+    "primeicons": "^2.0.0",
+    "primeng": "^8.1.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

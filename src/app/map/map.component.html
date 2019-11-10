@@ -1,7 +1,17 @@
 <agm-map [latitude]="latitude" #map [longitude]="longitude" [zoom]="zoom" (mapClick)="mapClicked($event)">
-  <agm-marker [latitude]="latitude" [longitude]="longitude" title="You are here">
+  <agm-marker [latitude]="latitude" [longitude]="longitude" title="You are here" draggable="false">
   </agm-marker>
   <agm-marker [latitude]="m.lat" [longitude]="m.lng" *ngFor="let m of markers; let i = index">
     <agm-info-window> {{m.text}} </agm-info-window>
   </agm-marker>
 </agm-map>
+
+
+<p-dialog header="Save a note" [(visible)]="display">
+  <form [formGroup]="formGroup" (ngSubmit)="saveLocationInf()">
+    <span> Note <strong>*</strong> : <input required formControlName="text" type="text" pInputText />
+    </span>
+    <p-button label="Save" type="submit"></p-button>
+  </form>
+</p-dialog>
+<p-toast [style]="{marginTop: '80px'}" position="top-center" key="tc"></p-toast>

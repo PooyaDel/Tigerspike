@@ -1,5 +1,4 @@
-<i class="fas fa-bars" (click)="showLinks =!showLinks"></i>
-<div *ngIf="showLinks">
-  <a [routerLink]="['/login']" (click)="showLinks =!showLinks">Login</a>
-  <a [routerLink]="['/map']" (click)="showLinks =!showLinks">Map</a>
-</div>
+<p-menu #menu [popup]="true" [model]="items"></p-menu>
+<div>
+  <button pButton (click)="menu.toggle($event)" type="button" icon="pi pi-bars" class="ui-button-rounded"></button>
+  Landmark Remark</div>

@@ -1,3 +1,8 @@
-<p>
-  login works!
-</p>
+<form [formGroup]="formGroup" (ngSubmit)="login()">
+  <span> User ID <strong>*</strong>:</span>
+  <input required formControlName="userId" type="text" pInputText />
+  <span> Password :<strong>*</strong> </span>
+  <input required formControlName="password" type="password" pInputText />
+  <p-button label="Login" type="submit"></p-button>
+</form>
+<p-toast [style]="{marginTop: '180px'}" position="top-center" key="tc"></p-toast>
