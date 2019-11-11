@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
+import { AuthGaurdService } from 'src/auth-gaurd.service';
 
 @Component({
   selector: 'app-menu',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
   items: MenuItem[];
 
-  constructor() { }
+  constructor(private authGaurdService: AuthGaurdService) { }
   showLinks = false;
   ngOnInit() {
 
@@ -18,9 +19,10 @@ export class MenuComponent implements OnInit {
       label: 'User',
       items: [
         { label: 'Login', icon: 'pi pi-user', url: '/login' },
-        { label: 'Map', icon: 'pi pi-map-marker', url: '/map' }
+        { label: 'Map', icon: 'pi pi-map-marker', url: '/map' },
+        { label: 'Log out', separator: true },
+        { label: 'Log out', command: () => this.authGaurdService.isAuthenticated.next(false), icon: 'pi pi-map-marker', url: '/map' },
       ]
     }];
   }
-
 }

@@ -29,29 +29,36 @@ export class LoginComponent implements OnInit {
       password: [undefined, Validators.required],
     });
   }
-
+  
+  // Similautes a login process
   login() {
+
     if (!this.formGroup.valid) {
-      this.formGroup.markAsPristine();
-      this.formGroup.markAsUntouched();
       this.error = true;
       return;
     }
 
+
     this.loginService.login(this.formGroup.controls.userId.value, this.formGroup.controls.password.value).subscribe(result => {
+      // If successed, update the status of the user for the whole application. 
       this.authGaurdService.isAuthenticated.next(result);
       this.router.navigate(['map']);
+      this.messageService.clear();
+      this.messageService.add({ key: 'tc', severity: 'Succsess', summary: 'Redirecting...', detail: `` });
+      // Cleanup the form.
+      this.cleanUpForm();
 
-    }, err => (console.log(JSON.stringify(err))));
-
-    this.messageService.clear();
-    this.messageService.add({ key: 'tc', severity: 'error', summary: 'Invalid login!', detail: `` });
-
-    // this.cleanUpForm();
+    }, err => {
+      this.messageService.clear();
+      this.messageService.add({ key: 'tc', severity: 'Error', summary: 'Login process failed.', detail: `Please see the console log for details.` });
+      // Logs error on console (if any);
+      console.log(JSON.stringify(err));
+    });
   }
 
+  //Cleans up the form after use.
   private cleanUpForm() {
-    this.formGroup.patchValue({ userId: '', password: '' });
+    this.formGroup.reset();
     this.formGroup.markAsPristine();
   }
 

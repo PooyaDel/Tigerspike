@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { MarkerModel } from 'src/model/marker.model';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,4 @@ import { MarkerModel } from 'src/model/marker.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
 }
