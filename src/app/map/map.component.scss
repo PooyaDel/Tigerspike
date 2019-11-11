@@ -6,6 +6,18 @@
 
   agm-map {
     height: 100%;
+
+    agm-info-window {
+      display: flex;
+      flex-direction: row;
+
+      div,
+      span {
+        padding: 5px;
+        font-size: 30px;
+      }
+    }
+
   }
 
   form {
