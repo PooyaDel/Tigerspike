@@ -46,8 +46,6 @@ Please refer to https://github.com/PooyaDel/LandmarkRemarkService for source cod
 
  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 
 ## Solution overview
 This application uses angular 8.3 for UI which and for back-end I used .net core 3.0 and for database I have used Entity Frameowrk.
