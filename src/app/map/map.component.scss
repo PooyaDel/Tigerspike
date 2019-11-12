@@ -4,6 +4,10 @@
   display: block;
   height: calc(100vh - 70px);
 
+  .ui-inputgroup {
+    padding-bottom: 10px;
+  }
+
   agm-map {
     height: 100%;
 

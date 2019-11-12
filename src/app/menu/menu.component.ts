@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { Router } from '@angular/router';
-import { AuthGaurdService } from 'src/auth-gaurd.service';
 import { LoginService } from '../service/login-service';
 
 @Component({

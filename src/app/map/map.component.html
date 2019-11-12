@@ -1,8 +1,13 @@
+<div class="ui-inputgroup">
+  <input type="text" pInputText placeholder="Keyword" [(ngModel)]="searchPhrase">
+  <button pButton type="button" label="Search" [disabled]="!searchPhrase" (click)="searchMarkers()"></button>
+</div>
+
 <agm-map [latitude]="latitude" #map [longitude]="longitude" [zoom]="zoom" (mapClick)="mapClicked($event)">
   <agm-marker [latitude]="latitude" [longitude]="longitude" title="You are here" draggable="false">
   </agm-marker>
   <agm-marker [latitude]="m.lat" [longitude]="m.lng" *ngFor="let m of markers; let i = index">
-    <agm-info-window>
+    <agm-info-window (infoWindowClose)="updateMarker(m)" [isOpen]="m.isOpen">
       <div>
         User : <strong>{{m.userName}}</strong>
       </div>
@@ -11,7 +16,7 @@
   </agm-marker>
 </agm-map>
 
-<p-dialog header="Save a note" [(visible)]="display">
+<p-dialog header="Save a note" [(visible)]="displayNoteDialog">
   <form [formGroup]="formGroup" (ngSubmit)="saveLocationInfo()">
     <span> Note <strong>*</strong> : <input required formControlName="text" type="text" pInputText />
     </span>

@@ -4,4 +4,5 @@ export interface MarkerModel {
     text?: string;
     userId?: string;
     userName?: string;
+    isOpen?: boolean;
 }

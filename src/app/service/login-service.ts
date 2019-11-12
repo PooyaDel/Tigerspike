@@ -12,13 +12,13 @@ export class LoginService {
   // the current user. Default is none until they login.
   user = new BehaviorSubject<UserModel>(null);
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(public httpClient: HttpClient) { }
   // Calls to a Mocked login process on back-end. 
   login(userId: string, password: string): Observable<UserModel> {
     return this.httpClient.post<UserModel>(`${environment.baseUrl}/Auth`, { userId: userId, password: password });
   }
 
-  public get CrrentUser(): UserModel {
+  public get currentUser(): UserModel {
 
     if (this.user.value) {
       return this.user.value;
@@ -32,7 +32,7 @@ export class LoginService {
     return;
   }
 
-  public set CrrentUser(result: UserModel) {
+  public set currentUser(result: UserModel) {
     this.user.next(result);
     localStorage.user = JSON.stringify(result);
   }

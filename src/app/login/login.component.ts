@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
           return;
         }
         // If successed, update the status of the user for the application. 
-        this.loginService.CrrentUser = result;
+        this.loginService.currentUser = result;
 
         this.router.navigate(['map']);
         this.messageService.add({ key: 'tc', severity: 'Succsess', summary: 'Redirecting...', detail: `` });

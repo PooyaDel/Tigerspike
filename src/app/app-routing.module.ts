@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MapComponent } from './map/map.component';
-import { AuthGaurdService } from 'src/auth-gaurd.service';
+import { AuthGuardService } from 'src/app/service/auth-guard.service';
 
 
 const routes: Routes = [
@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path: 'map',
     component: MapComponent,
-    canActivate: [AuthGaurdService]
+    canActivate: [AuthGuardService]
   },
   {
     path: 'login',

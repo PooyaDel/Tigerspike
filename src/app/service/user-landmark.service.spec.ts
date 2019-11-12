@@ -2,11 +2,13 @@
 
 import { TestBed, async, inject } from '@angular/core/testing';
 import { UserLandmarkService } from './user-landmark.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('Service: UserLandmark', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [UserLandmarkService]
+      providers: [UserLandmarkService], 
+      imports: [HttpClientModule]
     });
   });
 
