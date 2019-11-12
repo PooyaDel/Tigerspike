@@ -14,6 +14,7 @@ If I had more time and it was an actual production system I would undertake foll
 - Generate a pool of components, resources etc... available to every so that we do not re-invent the wheel and make it clear at all levels how to keep things consistent 
 - A proper authentication...
 - UI validation, not a lot of it at this stage but still some better visual effects.
+- UI Error handling: Using an angular httpinterceptor for all the possible issues with proper messages (error statuses 400, 401, 500, etc..)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
