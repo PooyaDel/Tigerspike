@@ -43,7 +43,7 @@ Please refer to https://github.com/PooyaDel/LandmarkRemarkService for source cod
 3- Unit testing both UI/backend:  4 hours
   - Unit tested the logic just to demonstrate some techniques. More tests done in UI due to nature of this small app.
   
-4- UI clean-up : 4 hours : Just to make sure everything is responsive and google maps is working fine. I had a bit of trouble dealing with google maps refusing to pan to spesific locations that took a bit of time to read and findout and data comes back correctly...basically wearing the tester hat and making sure ther app works on mobile.
+4- UI clean-up : 4 hours : Just to make sure everything is responsive and google maps is working fine. I had a bit of trouble dealing with google maps refusing to pan to spesific locations that took a bit of time to read and findout and data comes back correctly...basically putting on the tester hat and making sure ther app works on mobile.
 
  
 
