@@ -1,7 +1,7 @@
 # Landmark Remark
 Hi, 
 Thank you for giving me the opportunity to show what I can do. I do appreciate how the questions presented.
-Just a note, I would like to mention that I would spend more time on this application if I could, however, I was unable to really polish and clean up to the level I really wanted simply due to the fact that I have 3 other tests in progress at this stage and have to finish soon. I am sure you appricate my situation.
+Just a note, I would like to mention that I would spend more time on this application if I could, however, I was unable to do so simply due my schedule and the time limit on this project.
 
 
 If I had more time and it was an actual production system I would undertake followiong tasks:
@@ -13,6 +13,7 @@ If I had more time and it was an actual production system I would undertake foll
 - I do very clearly understand you point about having a very well commented code, however, the best way is to have simple code.
 - Generate a pool of components, resources etc... available to every so that we do not re-invent the wheel and make it clear at all levels how to keep things consistent 
 - A proper authentication...
+- UI validation, not a lot of it at this stage but still some better visual effects.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
