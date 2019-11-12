@@ -48,7 +48,7 @@ Please refer to https://github.com/PooyaDel/LandmarkRemarkService for source cod
 
 
 ## Solution overview
-This application uses angular 8.3 for UI which and for back-end I used .net core 3.0 and for database I have used Entity Frameowrk.
+This application uses angular 8.3 for UI and for back-end I used .net core 3.0 Web API (RESTFul) and for database I have used Entity Frameowrk.
 I also use log4net for error logging.
 User will need to "login" to the sysem which I have mocked for 2 static users at this stage. once that's done, user will be redirect to the map which she/he can see all the available markers and by clicking on any area on the map and addeding a comment they can save a location. As, request, they are also able to view comments by tapping/clicking on the markers on the map.
 the markers will be saved to a local database (sqllite).
