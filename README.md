@@ -41,7 +41,7 @@ Please refer to https://github.com/PooyaDel/LandmarkRemarkService for source cod
 2- back end: roughly 4 hours
   - Setup EF data mapping and how to get them right with CODE FIRST (I will never do in production due to performance and over-complicated queries etc...)
   - Adding logger and small things like setting up CORS, DI view models, details and comments.
-  - Wired-up RESTful apis considering SOLID rules.
+  - Wired-up RESTful apis and desinging worker classes considering SOLID rules.
   
 3- Unit testing both UI/backend:  4 hours
   - Unit tested the logic just to demonstrate some techniques. More tests done in UI due to nature of this small app.
