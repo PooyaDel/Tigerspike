@@ -12,7 +12,7 @@ If I had more time and it was an actual production system I would undertake foll
 - all the DTOs must be immutable (readonly in c# with a public getter).
 - I do very clearly understand you point about having a very well commented code, however, the best way is to have simply readable code.
 - Generate a pool of components, resources etc... available to every so that we do not re-invent the wheel and make it clear at all levels how to keep things consistent 
-- A proper authentication...
+- A proper authentication using any social logging like Google, or Twitter
 - UI validation, not a lot of it at this stage but still some better visual effects.
 - UI Error handling: Using an angular httpinterceptor for all the possible issues with proper messages (error statuses 400, 401, 500, etc..)
 - TDD: I do understand the importance and benefits of TDD and I have done it in the past for years, however, I usually stick to basics of writing a testable code and then test them, I did not 100% follow the TDD rules, however, for me, it is always helpful to once again "review" my code after I context switch to unit testing.
