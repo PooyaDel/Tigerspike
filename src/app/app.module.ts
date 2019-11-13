@@ -24,12 +24,14 @@ import { AuthGuardService } from 'src/app/service/auth-guard.service';
 import { LoginService } from './service/login-service';
 
 @NgModule({
+   // modules created in this app
    declarations: [
       AppComponent,
       MenuComponent,
       LoginComponent,
       MapComponent
    ],
+   //modules imported from the libraries.
    imports: [
       BrowserModule,
       AppRoutingModule,
