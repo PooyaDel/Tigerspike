@@ -2,6 +2,8 @@
   padding: 10px;
   border: 1px solid wheat;
   display: block;
+
+  // fill the remaining area with map.
   height: calc(100vh - 70px);
 
   .ui-inputgroup {
@@ -21,7 +23,6 @@
         font-size: 30px;
       }
     }
-
   }
 
   form {
@@ -32,7 +33,5 @@
     p-button {
       padding: 5px 0;
     }
-
   }
-
 }

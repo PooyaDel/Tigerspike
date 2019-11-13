@@ -29,13 +29,14 @@ export class MapComponent implements OnInit, AfterViewInit {
 
   // Current map instance.
   map: any;
-  //Dependency injections (by order) :Landmark service operations, Angular form builder, messaging service to show information to user as pop-ups etc..
+  //Dependency injections (by order) :Landmark service operations, Angular form builder, messaging service to show information to user as pop-ups etc.., login service to get current user info
+  // and google api wrapper to use for operations on the map
   constructor(private userLandmarkService: UserLandmarkService, private formBuilder: FormBuilder,
     private messageService: MessageService, private loginService: LoginService, public gMaps: GoogleMapsAPIWrapper) { }
   formGroup: FormGroup;
 
+  //Gets the instance of the map on this page.
   @ViewChild(AgmMap, { static: true }) agmMap;
-  @ViewChildren(AgmInfoWindow) agmInfoWindow;
 
   ngOnInit() {
     this.setupForm();
