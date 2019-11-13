@@ -17,6 +17,7 @@ If I had more time and it was an actual production system I would undertake foll
 - UI Error handling: Using an angular httpinterceptor for all the possible issues with proper messages (error statuses 400, 401, 500, etc..)
 - TDD: I do understand the importance and benefits of TDD and I have done it in the past for years, however, I usually stick to basics of writing a testable code and then test them, I did not 100% follow the TDD rules, however, for me, it is always helpful to once again "review" my code after I context switch to unit testing.
 - Add UI linting rules.
+- Securing API keys and client secrets and other sensitive information.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
