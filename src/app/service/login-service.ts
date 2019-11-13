@@ -9,7 +9,7 @@ import { UserModel } from 'src/model/user.model';
 })
 export class LoginService {
 
-  // the current user. Default is none until they login.
+  // the current user. Default is none until they login. Will let subscribers know as soon as user has logged in.
   user = new BehaviorSubject<UserModel>(null);
 
   constructor(public httpClient: HttpClient) { }
