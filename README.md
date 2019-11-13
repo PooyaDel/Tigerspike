@@ -10,7 +10,7 @@ If I had more time and it was an actual production system I would undertake foll
 - RESTFul apis must always have validators for every single DTO. There are good libraries that I usually use e.g. : https://fluentvalidation.net/start
 - Performance considerations for instance, in this application, all the markers within the view area should be retrieved and on change a new call should be made to get updated points.
 - all the DTOs must be immutable (readonly in c# with a public getter).
-- I do very clearly understand you point about having a very well commented code, however, the best way is to have simple code.
+- I do very clearly understand you point about having a very well commented code, however, the best way is to have simply readable code.
 - Generate a pool of components, resources etc... available to every so that we do not re-invent the wheel and make it clear at all levels how to keep things consistent 
 - A proper authentication...
 - UI validation, not a lot of it at this stage but still some better visual effects.
