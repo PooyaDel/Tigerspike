@@ -9,7 +9,7 @@ import { LoginService } from './login-service';
 export class AuthGuardService implements CanActivate {
 
   constructor(public router: Router, private loginService: LoginService) { }
-
+  // returns true if user has logged in and let the request to url pass to user , otherwise redirects to login page.
   canActivate(): boolean {
     if (!this.loginService.currentUser) {
       this.router.navigate(['login']);

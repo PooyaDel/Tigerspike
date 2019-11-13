@@ -31,7 +31,7 @@ export class LoginService {
     }
     return;
   }
-
+  // Makes sure the stored user on local storage are in sync with the current user.
   public set currentUser(result: UserModel) {
     this.user.next(result);
     localStorage.user = JSON.stringify(result);
