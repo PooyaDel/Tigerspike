@@ -23,7 +23,7 @@ export class LoginService {
     if (this.user.value) {
       return this.user.value;
     }
-
+    // Saves user data in local cache.
     if (localStorage.user) {
       const user = JSON.parse(localStorage.user);
       this.user.next(user);
